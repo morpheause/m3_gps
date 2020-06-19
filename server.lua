@@ -1,3 +1,6 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 local blips = {}
 
 print('[^2m3_gps^0] - Started!')
