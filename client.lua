@@ -105,6 +105,10 @@ function GPSOn()
 	end
 end
 
+RegisterCommand('gpskapat', function()
+	GPSOff()
+end)
+
 function GPSOff()
 	TriggerServerEvent('m3:gps:dropBlipCtoS', firstname, lastname, PlayerData.job.name, code)
 	TriggerEvent('m3:gps:dropBlips')
